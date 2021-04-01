@@ -1,0 +1,167 @@
+/* Nuestros Custom Properties */
+:root {
+    --fuenteHeading: 'Titillium Web', sans-serif;
+    --fuenteNormal: 'Raleway', sans-serif;
+
+    --negro: #000000;
+    --blanco: #FFFFFF;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+/* Nuestras Propiedades Globales */
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+h1, h2 {
+    font-size: 4rem;
+    font-family: var(--fuenteHeading);
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-family: var(--fuenteNormal);
+    font-size: 1.5rem;
+}
+
+/* Estilos de nuestra Navbar */
+
+.barra {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.barra-logo {
+    text-align: center;
+    padding-left: 2rem;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.nav-enlace {
+    display: block;
+    text-align: center;
+    padding-right: 2rem;
+    font-family: var(--fuenteNormal);
+    color: var(--blanco);
+}
+
+.texto-heading {
+    color: var(--blanco);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55rem;
+}
+
+.btn-buscar-index {
+    background-color: var(--blanco);
+    padding: 2rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5%;
+    font-family: var(--fuenteNormal);
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.btn-buscar-index:hover {
+    background-color: pink;
+    color: var(--blanco);
+}
+
+/* Estilos de Pagina Buscador */
+.texto-buscador, .texto-resultados {
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-family: var(--fuenteNormal);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.caja {
+    font-size: 26rem;
+    height: 55rem;
+}
+/* Estilos del footer */
+.texto-footer {
+    text-align: center;
+    color: rgb(200, 200, 200);
+}
+
+.texto-footer > span {
+    font-weight: bolder;
+}
+
+.tarjeta {
+    border: none;
+}
+
+#buscadorLibros, #btn-buscar {
+    font-size: 1.5rem;
+    font-family: var(--fuenteNormal);
+}
+
+/* Esitlos de animación */ 
+.wrap-2{
+    position:fixed;
+    z-index:-30;
+    top:0;
+    left:0;
+    overflow:hidden;
+    height:100vh;
+    width:100vw;
+    margin:auto;
+        background: -webkit-gradient(linear, left top, right bottom, from(#438ee1), to(#973999));
+    background: linear-gradient(to bottom right, #FF512F, #DD2476);
+}
+canvas{
+    width:100%;
+    height:100%;
+}
+
